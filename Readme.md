@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Никита Беспамятных](https://up.htmlacademy.ru/htmlcss/23/user/887261).
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/id223468).
 
 ---
 
