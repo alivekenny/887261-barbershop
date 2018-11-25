@@ -28,22 +28,22 @@
         <a href="catalog.html">Магазин</a>
         <a class="breadcrumbs-current">Средства для ухода</a>
       </nav>
-      <section class="filter">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
         <h2>Фильтры</h2>
-        <h3>Производители</h3>
-        <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
-        </ul>
-        <h3>Группы товаров</h3>
-        <ul>
-          <li>Бритвенные пренадлежности</li>
-          <li>Средства для ухода</li>
-          <li>Аксессуары</li>
-        </ul>
-        <button class="button">Показать</button>
-      </section>
+        <fieldset>
+          <legend>Фильтры</legend>
+          <label><input type="checkbox">"Baxter of California"</label>
+          <label><input type="checkbox">"Mr Natty"</label>
+          <label><input type="checkbox">"Suavecito"</label>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров</legend>
+          <label><input type="radio" name="product-group">Бритвенные пренадлежности</label>
+          <label><input type="radio" name="product-group">Средства для ухода</label>
+          <label><input type="radio" name="product-group">Аксессуары</label>
+        </fieldset>
+        <button type="submit" class="button">Показать</button>
+      </form>
       <section class="catalog-items-list">
         <h2>Товары</h2>
         <ul class="catalog-list">
@@ -51,7 +51,7 @@
             <a href="catalog-item.html">
               <img class="item-image" width="220" height="165" src="img/item-1.jpg" alt="Набор для путешествий «Baxter of California»">
               <p class="item-name">Набор для путешествий «Baxter of California»</p>
-              <p class="item-price">2900</p>
+              <p class="item-price">2900 ₽</p>
             </a>
             <button class="button">Купить</button>
           </li>
@@ -59,7 +59,7 @@
               <a href="catalog-item.html">
                 <img class="item-image" width="220" height="165" src="img/item-2.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
                 <p class="item-name">Увлажняющий кондиционер «Baxter of California»»</p>
-                <p class="item-price">750</p>
+                <p class="item-price">750 ₽</p>
               </a>
               <button class="button">Купить</button>
             </li>
@@ -67,7 +67,7 @@
               <a href="catalog-item.html">
                 <img class="item-image" width="220" height="165" src="img/item-3.jpg" alt="Гель для волос «SUAVECITO»">
                 <p class="item-name">Гель для волос «SUAVECITO»</p>
-                <p class="item-price">290</p>
+                <p class="item-price">290 ₽</p>
               </a>
               <button class="button">Купить</button>
             </li>
@@ -75,7 +75,7 @@
               <a href="catalog-item.html">
                 <img class="item-image" width="220" height="165" src="img/item-4.jpg" alt="Глина для укладки волос «American crew»">
                 <p class="item-name">Глина для укладки волос «American crew»</p>
-                <p class="item-price">500</p>
+                <p class="item-price">500 ₽</p>
               </a>
               <button class="button">Купить</button>
             </li>
