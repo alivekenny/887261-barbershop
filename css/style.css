@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  text-transform: uppercase;
+
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  
+  background-color: #000000;
+}
+
+.site-navigation a,
+.account-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation,
+.account-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.account-navigation a:hover,
+.account-navigation a:focus {
+  background-color: #242424; 
+}
+
+.features-list {
+  text-align: center;
+  list-style: none;
+}
+
+.features-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-column {
+  color: #000000;
+  
+
+  background-color: #ffffff;
+  background-image: url("../img/white-texture.jpg")
+}
