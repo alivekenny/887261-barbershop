@@ -57,7 +57,7 @@ a {
 .index-column {
   color: #000000;
   
-  background-color: #ffffff;
+  background-color: #f9f6f3;
   background-image: url("../img/white-texture.jpg");
   background-size: 50px;
 }
@@ -72,7 +72,7 @@ a {
 
 .gallery-item {
   border: 7px solid #ffffff;
-  background-color: #ff00ff;
+  background-color: #cc00cc;
 }
 
 .button {
@@ -109,6 +109,8 @@ a {
 }
 
 .main-footer {
+  color: #ffffff;
+
   background-color  : #222222;
   background-image: url("../img/bg-footer.png");
   background-size: 50px;
@@ -133,7 +135,8 @@ a {
   list-style: none;
 }
 
-.main-footer .button:hover {
+.main-footer .button:hover,
+.current-page {
   color: #000000;
 
   background-color: #ffffff;
@@ -142,11 +145,11 @@ a {
 .modal {
   color: #000000;
   
-  background-color: #ffffff;
+  background-color: #f9f6f3;
   background-image: url("../img/white-texture.jpg");
   background-size: 50px;
 
-  box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75);
+  /* box-shadow: 0px 30px 50px 0 rgba(0, 1, 1, 0.75); */
 }
 
 .modal-map img {
@@ -161,4 +164,79 @@ a {
 
 .forgot-password-link:hover {
   text-decoration: none;
+}
+
+.inner-page {
+  background-color: #f9f6f3;
+  background-image: url("../img/white-texture.jpg");
+  background-repeat: repeat;
+  background-size: 50px;
+  color: #000000;
+}
+
+.page-title {
+  font-size: 35.5px;
+  line-height: 42.5px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filters h2 {
+  font-size: 23.5px;
+  line-height: 30.5px;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filters li:hover,
+.filters li:focus,
+.filters li:active {
+  color: #663d15;
+}
+
+.item-price {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.2);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.3);
+}
+
+.item-name {
+  text-transform: none;
+  line-height: 18px;
+}
+
+.catalog-paging {
+  list-style: none;
+  color: red;
+}
+
+.current-page:hover,
+.current-page:focus,
+.current-page:active {
+  background-color: #ffffff;
 }
