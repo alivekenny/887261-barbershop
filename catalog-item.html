@@ -5,30 +5,32 @@
     <title>Набор для путешествий «Baxter of California» — Бородинский</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="main-header">
-			<ul class="main-navigation">
-				<li><a class="main-header-logo" href="index.html">Барбершоп "Бородинский"<img width="130" height="30" src="http://placehold.it/130x30" alt="Логотип барбершопа «Бородинский»"></a></li>
-				<li><a href="info.html">Информация</a></li>
-				<li><a href="news.html">Новости</a></li>
-				<li><a href="price.html">Прайс-лист</a></li>
-				<li><a class="main-navigation-current" href="catalog.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
-			<ul class="account-navigation">
-				<li>Вход</li>
-			</ul>
+  <body class="inner-page">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li><a class="main-header-logo" href="index.html">Барбершоп "Бородинский"<img width="130" height="30" src="img/logo.svg" alt="Логотип барбершопа «Бородинский»"></a></li>
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="news.html">Новости</a></li>
+					<li><a href="price.html">Прайс-лист</a></li>
+					<li><a class="main-navigation-current" href="catalog.html">Магазин</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<ul class="account-navigation">
+					<li class="login-link"><a href="login.html">Вход</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
 			<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
-			<nav class="breadcrumbs">
-				<a href="index.html">Главная</a>
-				<a href="catalog.html">Магазин</a>
-				<a href="catalog-skincare">Средства для ухода</a>
-				<a class="breadcrumbs-current">Набор для путешествий «Baxter of California»</a>
-			</nav>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li><a href="catalog-skincare">Средства для ухода</a></li>
+				<li><a class="breadcrumbs-current">Набор для путешествий «Baxter of California»</a></li>
+			</ul>
 			<section class="item-pictures">
-				<h2>Фотографии товара</h2>
+				<h2 class="visually-hidden">Фотографии товара</h2>
 					<ul>
 						<li><img class="item-picture-large" width="460" height="500" src="img/item-pic-1.jpg" alt="Основное фото товара"></li>
 						<li><img class="item-picture-small" width="220" height="165" src="img/item-pic-2.jpg" alt="Фото товара"></li>
@@ -37,7 +39,7 @@
 					</ul>
 					</section>
 			<section class="item-description">
-				<h2>Описание товара</h2>
+				<h2 class="visually-hidden">Описание товара</h2>
 				<p class="item-availability">Есть в наличии</p>
 				<p class="item-partnumber">Артикул: Dexter-AE</p>
 				<p class="item-description-text">
@@ -46,7 +48,7 @@
 				<p class="item-price">2900</p>
 				<button class="button">Купить</button>
 				<h3>В набор входят</h3>
-				<ul>
+				<ul class="item-content">
 					<li>Средство для умывания (50 мл)</li>
 					<li>Увлажняющий крем (50 мл)</li>
 					<li>Крем для бритья (50 мл)</li>
@@ -55,42 +57,46 @@
 				</ul>
 			</section>
 		</main>
-		<footer>
-			<p>
-				Барбершоп "Бородинский"<br>
-				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="">Как нас найти?</a><br>
-				Телефон: +7 (495) 666-02-66
-			</p>
-			<div>
-				<p>Давайте дружить</p>
-				<a href="" class="button vk-button">Вконтакте</a>
-				<a href="" class="button fb-button">Фейсбук</a>
-				<a href="" class="button instagram-button">Инстаграм</a>
-			</div>
-			<p>
-				Разработано
-				<a href="" class="button">HTML Academy</a>
-			</p>
-			</footer>
-			<section class="modal modal-login visually-hidden">
-				<h2>Личный кабинет</h2>
-				<p>Введите пожалуйста свой логин и пароль</p>
-				<form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-					<input type="text" class="login" name="login" placeholder="Логин">
-					<input type="password" class="password" name="login" placeholder="Пароль">
-					<input type="checkbox" class="checkbox" name="remember-me" id="remember-me">
-					<label for="remember-me">Запомнить меня</label>
-					<a href="#" class="link">Я забыл пароль</a>
-					<button type="submit" class="button">Войти</button>
-					<button type="button" class="close">Закрыть</button>
-				</form>
-			</section>
-			<section class="modal modal-map visually-hidden">
-				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<img src="img/map.jpg" width="766" height="560" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
-				<button type="button" class="close">Закрыть</button>
-			</section>
-		<script src="js/script.js"></script>
+    <footer class="main-footer">
+      <p class="footer-contacts ">
+        Барбершоп "Бородинский"<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="">Как нас найти?</a><br>
+        Телефон: +7 (495) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить</b>
+        <ul>
+          <li><a href="" class="button vk-button">Вконтакте</a></li>
+          <li><a href="" class="button fb-button">Фейсбук</a></li>
+          <li><a href="" class="button instagram-button">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>
+          Разработано
+          <a href="" class="button">HTML Academy</a>
+        </b>
+      </p>
+    </footer>
+    <section class="modal modal-login visually-hidden">
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+        <input type="text" class="login" name="login" placeholder="Логин">
+        <input type="password" class="password" name="login" placeholder="Пароль">
+        <input type="checkbox" class="checkbox" name="remember-me" id="remember-me">
+        <label for="remember-me">Запомнить меня</label>
+        <a href="#" class="link">Я забыл пароль</a>
+        <button type="submit" class="button">Войти</button>
+        <button type="button" class="close">Закрыть</button>
+      </form>
+    </section>
+    <section class="modal modal-map visually-hidden">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map.jpg" width="766" height="560" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+      <button type="button" class="close">Закрыть</button>
+    </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
