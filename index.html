@@ -128,9 +128,11 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
         <input type="text" class="login" name="login" placeholder="Логин">
         <input type="password" class="password" name="login" placeholder="Пароль">
-        <input type="checkbox" class="checkbox" name="remember-me" id="remember-me">
-        <label for="remember-me">Запомнить меня</label>
-        <a href="#" class="link">Я забыл пароль</a>
+        <label class="login-checkbox" for="remember-me">
+          <input type="checkbox" class="checkbox" name="remember-me" id="remember-me">
+          Запомнить меня
+        </label>
+        <a href="#" class="link forgot-password-link">Я забыл пароль</a>
         <button type="submit" class="button">Войти</button>
         <button type="button" class="close">Закрыть</button>
       </form>
