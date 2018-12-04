@@ -28,7 +28,6 @@ a {
 }
 
 *, *:before, *::after {
-  /* background-color: rgba(255,0,0,0.1); */
   outline: 1px solid rgba(255,0,0,0.5);
 }
 
@@ -68,7 +67,7 @@ a {
 
 .container {
   width: 940px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .site-navigation a,
@@ -399,10 +398,18 @@ a {
 
 /* Карточка товара */
 
+.item-pictures {
+  width: 460px;
+}
+
 .item-pictures ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.item-description {
+  width: 380px;
 }
 
 .item-partnumber {
