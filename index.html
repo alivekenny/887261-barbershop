@@ -5,25 +5,30 @@
     <title>Барбершоп «Бородинский»</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://up.htmlacademy.ru/assets/htmlcss/demo/htmlcss18/grids/css/outline.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
   </head>
   <body>
     <header>
       <nav class="main-navigation">
-        <img width="370" height="155" src="img/index-logo.svg" alt="Логотип барбершопа «Бородинский»">
-        <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="catalog.html">Прайс-лист</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="account-navigation">
-            <li class="login-link"><a href="login.html">Вход</a></li>
-          </ul>
-        </nav>
+        <img class="main-logo" width="370" height="155" src="img/index-logo.svg" alt="Логотип барбершопа «Бородинский»">
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li><a href="info.html">Информация</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="catalog.html">Прайс-лист</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li class="login-link"><a href="login.html">Вход</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="container">
+    <main class="content container">
       <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -47,11 +52,11 @@
           <h2>Новости</h2>
             <ul class="news-list">
               <li class="news-item">
-                <p>Нам наконец завезли</p>
+                <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
                 <time datetime="2018-01-11T00:00">11 января</time>
               </li>
               <li class="news-item">
-                <p>В нашей команде пополнение</p>
+                <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
                 <time datetime="2018-01-18T00:00">18 января</time>
               </li>
             </ul>
@@ -87,7 +92,7 @@
           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="date">Дата</label>
-            <input type="date" id="date" name="date" value="2019-04-15">
+            <input type="text" id="date" name="date" placeholder="08.10.2018">
             <label for="time">Время</label>
             <input type="time" id="time" name="time" value="10:00">
             <label for="name">Ваше имя</label>
@@ -100,26 +105,28 @@
       </div>
     </main>
     <footer class="main-footer">
-      <p class="footer-contacts ">
-        Барбершоп "Бородинский"<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a href="">Как нас найти?</a><br>
-        Телефон: +7 (495) 666-02-66
-      </p>
-      <div class="footer-social">
-        <b>Давайте дружить</b>
-        <ul>
-          <li><a href="" class="button vk-button">Вконтакте</a></li>
-          <li><a href="" class="button fb-button">Фейсбук</a></li>
-          <li><a href="" class="button instagram-button">Инстаграм</a></li>
-        </ul>
+      <div class="container">
+        <p class="footer-contacts ">
+          Барбершоп "Бородинский"<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a class="link-underlined" href="">Как нас найти?</a><br>
+          Телефон: +7 (495) 666-02-66
+        </p>
+        <div class="footer-social">
+          <b>Давайте дружить</b>
+          <ul>
+            <li><a href="" class="button vk-button">Вконтакте</a></li>
+            <li><a href="" class="button fb-button">Фейсбук</a></li>
+            <li><a href="" class="button instagram-button">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>
+            Разработано
+            <a href="" class="button">HTML Academy</a>
+          </b>
+        </p>
       </div>
-      <p class="footer-copyright">
-        <b>
-          Разработано
-          <a href="" class="button">HTML Academy</a>
-        </b>
-      </p>
     </footer>
     <section class="modal modal-login visually-hidden">
       <h2>Личный кабинет</h2>
@@ -131,7 +138,7 @@
           <input type="checkbox" class="checkbox" name="remember-me" id="remember-me">
           Запомнить меня
         </label>
-        <a href="#" class="link forgot-password-link">Я забыл пароль</a>
+        <a href="#" class="link link-underlined">Я забыл пароль</a>
         <button type="submit" class="button">Войти</button>
         <button type="button" class="close">Закрыть</button>
       </form>
